@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashmate | Income </title>
+  <link rel="stylesheet" href="c-income-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend Exa:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navdiv">
+      <div class="header--contents">
+        <img class="nav--cashmate-logo" src="images/logo.png" alt="logo">
+        <p class="nav--title">CASH<br>MATE</p>
+      </div>
+      <ul>
+        <li><a>Dashboard</a></li>
+        <li><a>Income</a>
+        <li><a>Spendings</a>
+        <li><a>Cards</a>
+        <li><a>Planner</a>  
+      </ul>
+        <div class="header-ellipses">
+            <img class="ul--question" src="images/question.png" alt="question">
+            <img class="ul--settings" src="images/settings.png" alt="settings"></li>
+            <img class="ul--male-user" src="images/male-user.png" alt="male-user"></li> 
+        </div>
+    </div>
+  </header>
+
+  <main>
+      
+    <section class="section1">
+     <h1 class="section1--title">Manage The Money Coming In.</h1>
+    </section>
+    
+    <section class="section2">
+      <div class="section2--container">
+        <p class="section2--title">Income</p>
+        <button id="openPopupBtn"><img class="s2--add-button" src="images/add-button.png" alt="Open Form"></button>
+      </div> 
+
+      
+      <div class="section2--description">
+        <div class="section2--rect">
+          <img class="s2--income-bag" src="images/income-bag.png" alt="income-bag"><!--add css-->  
+          <div class="text-left"><!--add css-->
+            <p class="s2--desc-title">Accenture</p><!--add css-->
+            <p class="s2--desc-categ">Employment</p><!--add css-->
+          </div>
+          <div class="text-right"><!--add css-->
+            <p class="s2--desc-date">October 30</p><!--add css-->
+            <p class="s2--desc-amount">P50,000</p><!--add css-->
+          </div>
+        </div>
+        <div class="section2--rect">
+          <img class="s2--income-bag" src="images/income-hand.png" alt="income-hand"><!--add css-->  
+          <div class="text-left"><!--add css-->
+            <p class="s2--desc-title">Beauty Havens</p><!--add css-->
+            <p class="s2--desc-categ">Business</p><!--add css-->
+          </div>
+          <div class="text-right"><!--add css-->
+            <p class="s2--desc-date">October 22</p><!--add css-->
+            <p class="s2--desc-amount">P40,000</p><!--add css-->
+          </div>
+        </div>
+        <div class="section2--rect">
+          <img class="s2--income-bag" src="images/income-bag.png" alt="income-bag"><!--add css-->  
+          <div class="text-left"><!--add css-->
+            <p class="s2--desc-title">Accenture</p><!--add css-->
+            <p class="s2--desc-categ">Employment</p><!--add css-->
+          </div>
+          <div class="text-right"><!--add css-->
+            <p class="s2--desc-date">October 15</p><!--add css-->
+            <p class="s2--desc-amount">P50,000</p><!--add css-->
+          </div>
+        </div>
+        <div class="section2--rect">
+          <img class="s2--income-bag" src="images/income-hand.png" alt="income-hand"><!--add css-->  
+          <div class="text-left"><!--add css-->
+            <p class="s2--desc-title">Beauty Havens</p><!--add css-->
+            <p class="s2--desc-categ">Business</p><!--add css-->
+          </div>
+          <div class="text-right"><!--add css-->
+            <p class="s2--desc-date">October 7</p><!--add css-->
+            <p class="s2--desc-amount">P32,000</p><!--add css-->
+          </div>
+        </div>
+        <div class="section2--rect">
+          <img class="s2--income-bag" src="images/income-bag.png" alt="income-bag"><!--add css-->  
+          <div class="text-left"><!--add css-->
+            <p class="s2--desc-title">Others</p><!--add css-->
+            <p class="s2--desc-categ">Side Hustle</p><!--add css-->
+          </div>
+          <div class="text-right"><!--add css-->
+            <p class="s2--desc-date">September 30</p><!--add css-->
+            <p class="s2--desc-amount">P50,000</p><!--add css-->
+          </div>
+        </div>        
+      </div>
+    </section>
+      
+    <section class="section3">
+      <div class="section3--container">
+        <p class="section3--title">Computed Income</p> 
+        <p class="section3--amount">P 172,000</p>
+        <hr class="section3--line">
+        <p class="section3--description">Updated approximately<br>every 7 days.<br>Record shows only the past<br>4 weeks.</p>
+      </div>
+      <div class="section3--button">Deposit to Planner</div>
+    </section>
+        <div id="popupForm" class="popup">
+            <form class="form-container">
+              <h3>New Income</h3>
+                <label for="source">Income Source:</label><br>
+                <input type="text" placeholder="Enter Company/Business Name" name="source" required><br>
+    
+                <label for="category">Income Category:</label><br>
+                <input type="category" placeholder="Employment, Business, Etc." name="category" required><br>
+
+                <label for="date">Date:</label><br>
+                <input type="date" placeholder="January 12" name="date" required><br>
+
+                <label for="amount">Amount:</label><br>
+                <input type="number" placeholder="50000" name="amount" required><br>
+    
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn-cancel" id="closePopupBtn" onclick="closeForm()">Close</button>
+            </form>
+        </div>        
+    <script src="c-income-page.js"></script>
+    <div class="section4"></div>
+  </main>
+  
+  <footer>
+    <div class="footer--box1">        
+      <hr class="footer--line">
+      <div class="footer--container1">
+        <img class="footer--logo" src="images/logo.png" alt="logo">
+        <div class="footer--desc-center">
+          <h1 class="footer--title">Cashmate</h1>
+          <p class="footer--tagline">Tagline: Lorem</p>
+        </div>
+        <div class="footer--desc-right">
+          <p class="footer--follow">Follow us:</p>
+          <div class="footer--contact-links">
+            <img class="footer--email-logo" src="images/email-logo.png" alt="email-logo">
+            <img class="footer--fb-logo" src="images/fb-logo.png" alt="fb-logo">
+            <img class="footer--x-logo" src="images/x-logo.png" alt="x-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer--box2">
+        <div class="foooter--container2">
+          <div class="footer--2023">
+            <img class="footer--c-logo" src="images/credits.png" alt="credits">
+            2023 Cashmate, All Rights Reserved.
+            <span class>
+              <a href="#">Terms</a> |
+              <a href="g-2-privacy-policy-page.html">Privacy</a> |
+              <a href="g-1-get-help-page-page.html">FAQ's</a>
+            </span>
+          </div>
+        </div>  
+      </div>
+
+  </footer>
+
+</body>
+</html>
