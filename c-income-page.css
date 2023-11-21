@@ -188,7 +188,7 @@ ul > li, .header-ellipses {
 	margin-left: 10px;
 }
 
-.s2--income-bag{
+.s2--income-bag {
 	display: block;
 	padding-left: 10px;
 }
@@ -425,18 +425,19 @@ ul > li, .header-ellipses {
 	);
 	height: 41px;	
 	margin-top: 1.5px;
-	z-index:1;
+	z-index:0;
 }
 
 .footer--container2 {
-	display: inline;
+	display: flex;
 	justify-content: space-between;
+	z-index: 4;
 }
 
 .footer--c-logo {
 	width: 25px;
 	margin-left: 175px;
-	padding-top: 10px;
+	padding-top: 14px;
 }
 
 .footer--2023 {
@@ -444,15 +445,5 @@ ul > li, .header-ellipses {
 }
 
 .footer--tpf {
-	margin-left: 500px;
-}
-
-.footer--tpf a {
-	color: white;
-	margin-left: 20px;
-	text-decoration: none;
-}
-
-.footer--tpf a:hover {
-	text-decoration: underline;
+	margin-left: 550px;
 }
